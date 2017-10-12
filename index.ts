@@ -14,7 +14,7 @@ let myObj1 = {
 };
 class MyNode {
     val: number;
-    _priv: number;
+    private _priv: number;
 
     constructor(val: number) {
         this.val = 0;
@@ -23,9 +23,8 @@ class MyNode {
     doSomething() {
         this._priv = 10;
     }
-    return MyNode;
 }
-var myNodeInstance = new MyNode(1);
+const myNodeInstance: MyNode = new MyNode(1);
 
 function myFunction(): void {
     console.log("Hello World");
